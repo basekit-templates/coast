@@ -425,7 +425,7 @@ body {
     .ecombasket-list-container {
         display: none;
         text-align: left;
-        border: 1px solid @color-swatch7;
+        border: 1px solid lighten(@color-swatch5, 60%;
         -webkit-border-radius: 0 0 5px 5px;
         -moz-border-radius: 0 0 5px 5px;
         border-radius: 0 0 5px 5px;
@@ -610,33 +610,6 @@ body {
                 display: table;
             }
         }/* end companyheader */
-        .widget.clicktocall {
-            padding: 2.9em 0;
-            float: right;
-            @media @mobile {
-                float: none;
-                text-align: center;
-                padding: 0.3em 0 2.9em;
-            }
-            a {
-                @media @mobile {
-                    border: 0;
-                    -webkit-border-radius: 5px;
-                    -moz-border-radius: 5px;
-                    border-radius: 5px;
-                    background-color: @color-swatch7;
-                    -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.35);
-                    -moz-box-shadow:    0px 3px 0px 0px rgba(0, 0, 0, 0.35);
-                    box-shadow:         0px 3px 0px 0px rgba(0, 0, 0, 0.35);
-                    color: @color-swatch6;
-                }
-                &:hover {
-                    @media @mobile {
-                        background-color: darken(@color-swatch7,5%);
-                    }
-                }
-            }
-        }
     }
 
 /* ===============================
@@ -733,34 +706,6 @@ body {
    .twitter-profile-pic {
         float: left;
         margin-right: 10px;
-    }
-
-    .widget.tweet {
-        display: inline-block;
-        width: 20%;
-        @media @tablet {
-            display: block;
-            width: 100%;
-        }
-        a {
-            background-color: darken(@color-swatch5, 25%);
-            background-position: 55px;
-            display: block;
-            -moz-border-radius: 6px;
-            border-radius: 6px;
-            -webkit-border-radius: 6px;
-            float: right;
-            margin: 1.8em 0 1.25em;
-            padding: 14px 35px 14px 60px;
-            text-align: center;
-            width: 205px;
-            @media @tablet {
-                clear: both;
-                display: block;
-                margin: 0.5em 0 2.5em ;
-                width: 100%;
-            }
-        }
     }
 
 /* ===============================
@@ -1577,8 +1522,52 @@ hr {
     }
 }
 
-.menu-name {
+h1.menu-name {
     font-family: bkscale(@font-swatch1-font-family, 0.8);
+}
+
+/* Forms */
+
+.widget {
+    &.contactform {
+        input, textarea {
+            border: 1px solid fade(@color-swatch5, 25%);
+        }
+    }
+    &.profile {
+        form fieldset input {
+            border: 1px solid fade(@color-swatch5, 25%);
+        }
+    }
+    &.signupform fieldset {
+        button {
+            height: 45px;
+            top: -1px;
+            position: relative;
+        }
+        input {
+            border: 1px solid fade(@color-swatch5, 25%);
+        }
+    }
+    &.blogsearch {
+        input {
+            border: 1px solid fade(@color-swatch5, 25%);
+            height: 45px;
+        }
+        button {
+            background-color: @font-swatch7-background-color;
+            border: 0;
+            font-family: @font-swatch7-font-family;
+            font-size: @font-swatch7-font-size;
+            font-weight: @font-swatch7-font-weight;
+            color: @font-swatch7-color;
+            letter-spacing: inherit;
+            padding: 5px 10px;
+            margin: 1em 0;
+            text-decoration: none;
+            height: 45px;
+        }
+    }
 }
 
 /* Misc */ 
