@@ -1,0 +1,60 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bk-pt-home">
+
+<div class="nav">
+    <div class="nav-extended wrapper">
+        {{widget('extendednavigation', 'desktopnavigation', {})|raw}}
+    </div>
+</div>
+
+<header class="bk-header">   
+    <div class="wrapper">
+        <div class="companyheader">
+            {{widget('companyname', 'companyname', {"business": ""})|raw}}
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+        </div>
+        {{widget('ecombasket', 'desktopecombasket', {})|raw}}
+    </div>
+</header>
+
+<section>
+    {{widget('feature', 'featurehome', {"header": "", "strapline":"", "buttonText":"Nullam Posuer","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': 'true'})|raw}}
+</section>
+
+<div class="promoted">
+    <div class="wrapper clearfix">
+        {{widget('content', 'specialoffer', {content: 'This is a content widget.', lines: 'all'})|raw}}
+        <!--{{widget('button', 'product-button', {italic: false, text:'button', 'align':'widget-align-center'})|raw}}
+        {{widget('button', 'product-button-2', {italic: false, text:'button', 'align':'widget-align-center'})|raw}}-->
+    </div>
+</div>
+
+<div class="main wrapper clearfix">
+    {{widget('ecomcheckout', 'ecomcheckout', {})|raw}}
+    {{widget('ecomproductslist', 'ecomproductslist', {})|raw}}
+    {{widget('ecomproduct', 'ecomproduct', {})|raw}}
+</div>
+
+<footer class="bk-footer">
+    <div class="wrapper clearfix">
+        <div class="col-1">
+            {{widget('content', 'footerheader1', {"content":"<h4>Lorem ipsum dolor</h4>"})|raw}}
+            {{widget('content', 'footercolumn1content', {"content":"<p>Lorem ipsum dolor sit amet.</p>"})|raw}}
+        </div>
+        <div class="col-2">
+            {{widget('content', 'footerheader2', {"content":"<h4>Lorem ipsum dolor</h4>"})|raw}}
+            {{widget('socialicons', 'social', {'googleplus': 'https://plus.google.com/101946323226233111530', 'linkedin':'http://www.linkedin.com/company/basekit', 'facebook': 'https://www.facebook.com/TeamBaseKit', 'twitter': 'https://twitter.com/basekit', 'youtube': 'https://www.youtube.com/user/TeamBaseKit', 'rss': 'http://blogdiseno.basekit.es/feed/'})|raw}}
+        </div>
+        <div class="col-3">
+            {{widget('content', 'footerheader3', {"content":"<h4>Lorem ipsum dolor</h4>"})|raw}}
+            {{widget('signupform', 'signup', {'text': 'Send', 'label': 'Your Email', 'formTitle': 'Signup Form', 'email': 'profile'})|raw}}
+        </div>
+    </div>
+</footer>
+
+</div>
+
+{% endblock %}
