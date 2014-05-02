@@ -1038,6 +1038,8 @@ hr {
                 border-radius: 0;
                 height: 32px;
                 -webkit-appearance: none;
+                text-indent: 0.01px;
+                text-overflow: '';
                 border: 1px solid lighten(@color-swatch5, 40%);
                 padding: 4px 35px 4px 12px;
                 background: image('/images/arrow-dropdown.png') 95% center no-repeat, -moz-linear-gradient(top, white 0%, #f3f3f3 100%);
@@ -1046,6 +1048,9 @@ hr {
                 @media @tablet {
                     width: 100%;
                 }
+            }
+            select::-ms-expand {
+                display: none;
             }
         }
         .productlist-item-count {
