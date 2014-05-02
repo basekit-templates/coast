@@ -18,13 +18,11 @@
     </div>
 </header>
 
-<section>
-    {{widget('feature', 'featurehome', {"header": "", "strapline":"", "buttonText":"Nullam Posuer","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': 'true'})|raw}}
-</section>
+{{widget('feature', 'featurehome', {"header": "", "strapline":"", "buttonText":"Nullam Posuer","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': 'true'})|raw}}
 
 <div class="promoted">
     <div class="wrapper clearfix">
-        {{widget('content', 'specialoffer', {content: 'This is a content widget.', lines: 'all'})|raw}}
+        {{widget('content', 'specialoffer', {content:"This is a content widget."})|raw}}
     </div>
 </div>
 
