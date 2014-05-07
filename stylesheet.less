@@ -700,6 +700,17 @@ body {
         padding: 9px 10px 10px;
     }
 
+    .widget.signupform {
+        fieldset input {
+            @media @tablet {
+                width: 90%;
+            }
+            @media @mobile {
+                width: 75%;
+            }
+        }
+    }
+
 /* ===============================
   TWITTER
    =============================== */
@@ -979,7 +990,10 @@ hr {
                     margin-right: 0;
                     width: 75%;
                     @media @tablet {
-                        width: 80%;
+                        width: 90%;
+                    }
+                    @media @tablet {
+                        width: 75%;
                     }
                 }
                 button {
