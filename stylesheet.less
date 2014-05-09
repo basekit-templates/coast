@@ -241,15 +241,17 @@ body {
                     /* Folder dropdown arrow BG style goes Here */  
                     padding-right: 1.5%;            
                     cursor: pointer;
+                    .text {
+                        color: @font-swatch6-color;
+                        &:after {
+                            color: @font-swatch6-color;
+                        }
+                    }
                     &:hover {
                         .text {
-                            color: @font-swatch6-color-hover;
                             text-decoration: none;
                             @media @tablet {
                                 color: @font-swatch6-color;
-                            }
-                            &:after {
-                                color: @color-swatch1;
                             }
                         }
                     }
@@ -271,9 +273,9 @@ body {
                             display: block;
                             z-index: 9999999;
                             right: 0;
-                            color: @color-swatch6;
+                            color: lighten(@font-swatch6-color, 25%);
                             &:hover {
-                                color: @color-swatch6;
+                                color: @font-swatch6-color;
                             }
                             @media @tablet {
                                 font-size: 10px;
