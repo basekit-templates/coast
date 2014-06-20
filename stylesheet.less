@@ -356,6 +356,19 @@ body {
   ECOM - BASKET
    =============================== */
 
+
+.main .widget.ecombasket {
+    width: 100%;
+    margin: 1em 0;
+    .ecombasket-pull {
+        position: relative;
+    }
+    .ecombasket-list-container {
+        position: relative;
+        top: 5px;
+    }
+}
+
 .widget.ecombasket {
     float: right;
     z-index: 2; 
@@ -440,10 +453,7 @@ body {
         top: 65px;
         @media @tablet {
             max-height: auto;
-            border: none;
-            padding: 0;
             right: 0;
-            border: none;
             margin: 0 5%;
             position: relative;
             width: 90%;
