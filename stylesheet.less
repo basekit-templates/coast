@@ -574,13 +574,23 @@ body {
             }
             .logo, .companyname {
                 display: inline-block;
+                vertical-align: middle;
             }
             .logo {
-                margin: 4px 0 0 6px;
+                margin: 0 0 0 6px;
+                img, a {
+                    line-height: 0;
+                }
             }
             .companyname {
                 padding: 0.6em 0;
+                .companyname-wrap {
+                    &.align-left, &.align-right, &.align-center {
+                        float: none;
+                    } 
+                }
             }
+
             .companyname a {
                 display: block;
                 font-family: @font-swatch10-font-family;
