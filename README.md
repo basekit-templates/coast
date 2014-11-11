@@ -1,2 +1,4 @@
-coast
+Coast
 =====
+
+Basekit Ecommerce Theme
