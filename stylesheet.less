@@ -130,6 +130,10 @@ body {
     .clearfix
 }
 
+.widget.extendednavigation .bk-overlay {
+    width:100%!important;
+}
+
 .widget {
     &.extendednavigation {
         position: relative;
@@ -1033,6 +1037,16 @@ hr {
 }
 
 /* ===============================
+  LABEL
+   =============================== */
+
+label {
+    @media @mobile {
+        display:block;
+    }
+}
+
+/* ===============================
   FOOTER 
    =============================== */
 
@@ -1671,10 +1685,36 @@ hr {
         border-radius: 4px;
         padding: 2.5em;
     }
+    .menu-items li.menu-item-promoted {
+        @media @mobile {
+            padding:0;
+        }
+    }
 }
 
 h1.menu-name {
     font-family: bkscale(@font-swatch1-font-family, 0.8);
+}
+
+.menu .menu-subsection {
+    margin: 0;
+    padding: 0;
+}
+
+.widget.menu .menu-items.odd {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    @media @tablet {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+    @media @mobile {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
 }
 
 /* Forms */
