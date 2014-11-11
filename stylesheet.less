@@ -126,6 +126,10 @@ body {
     }
 }
 
+.extendednavigation {
+    .clearfix
+}
+
 .widget {
     &.extendednavigation {
         position: relative;
@@ -676,6 +680,17 @@ body {
 }
 
 /* ===============================
+  BUTTONS
+   =============================== */
+
+button.btn, .widget.blogsearch button, .ecom-product-go-to-checkout-btn {
+    &:hover {
+        background-color:@font-swatch7-background-color-hover;
+        text-decoration: none;
+    }
+}
+
+/* ===============================
    BLOCK QUOTE
   =============================== */
 
@@ -997,10 +1012,6 @@ width: 100%;
     -moz-border-radius: 100px;
     -border-radius: 100px;
     border-radius: 100px;
-    @media only screen and (min-width: 1040px) {
-        margin-right: 1.9%;
-        margin-bottom: 1.9%;
-    }
     &:hover {
         background-color: darken(@color-swatch3,10%);
     }
@@ -1184,6 +1195,12 @@ hr {
                 color: darken(@color-swatch1, 8%);
             }
         }
+    }
+}
+
+.widget.ecomproductslist .productlist-filter .productlist-display-form .form-group {
+    @media @mobile {
+        margin-bottom:0;
     }
 }
 
@@ -1748,4 +1765,6 @@ select {
     background-position-y: 53%;
     margin-bottom: 12px;
     padding-right: 33px;
+    height: 40px;
+    text-indent: 10px;
 }
