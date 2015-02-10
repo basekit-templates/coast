@@ -99,7 +99,7 @@ body {
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;    
+    display: flex;
     min-height: 100vh;
     flex-direction: column;
      -webkit-flex-direction: column;
@@ -264,7 +264,7 @@ body {
                 }
 
                 &.folder {
-                    /* Folder dropdown arrow BG style goes Here */  
+                    /* Folder dropdown arrow BG style goes Here */
                     cursor: pointer;
                     .text {
                         color: @font-swatch6-color;
@@ -310,14 +310,14 @@ body {
                         line-height: @font-swatch6-line-height;
                         letter-spacing: @font-swatch6-letter-spacing;
                         position: relative;
-                        
-                     
+
+
                     }
                     ul {
                         background-color: @color-swatch1;
                         -webkit-box-shadow: 0px 3px 2px 0px rgba(50, 50, 50, 0.15);
                         -moz-box-shadow:    0px 3px 2px 0px rgba(50, 50, 50, 0.15);
-                        box-shadow:         0px 3px 2px 0px rgba(50, 50, 50, 0.15); 
+                        box-shadow:         0px 3px 2px 0px rgba(50, 50, 50, 0.15);
                         padding: 0;
                         margin-top: 0;
                         @media @tablet {
@@ -392,7 +392,7 @@ body {
 
 .widget.ecombasket {
     float: right;
-    z-index: 2; 
+    z-index: 2;
         @media @tablet {
             display: inline-block;
             width: 100%;
@@ -453,7 +453,7 @@ body {
             }
         }
     }
-   
+
     &.show-content .ecombasket-list-container {
         display: block;
     }
@@ -514,20 +514,20 @@ body {
                     @media @tablet {
                         width: 10%;
                         margin-right:3%;
-                    } 
+                    }
                     @media @mobile {
                         width: 18%;
-                    }                
+                    }
                 }
                 .ecombasket-item-info {
                     float: left;
-                    max-width: 65%;    
+                    max-width: 65%;
                     @media @tablet {
-                        max-width: 87%;   
-                    } 
+                        max-width: 87%;
+                    }
                     @media @mobile {
-                        max-width: 79%;   
-                    }   
+                        max-width: 79%;
+                    }
                     .ecombasket-item-title, .ecombasket-item-count, .ecombasket-item-price, .ecombasket-remove-button {
                         font-size: bkscale(@font-swatch5-font-size,0.9);
                         line-height: bkscale(@font-swatch5-line-height,0.9);
@@ -631,7 +631,7 @@ body {
                     &.align-left, &.align-right, &.align-center {
                         float: none;
                         text-align: center;
-                    } 
+                    }
                 }
             }
 
@@ -650,7 +650,7 @@ body {
                     font-size: bkscale(@font-swatch10-font-size,0.9);
                     line-height: bkscale(@font-swatch10-line-height,0.9);
                 }
-            } 
+            }
             @media @tablet {
                 float: none;
                 width: auto;
@@ -706,6 +706,10 @@ body {
    =============================== */
 
 .widget.image {
+    text-align: center;
+    .image {
+        display: inline-block;
+    }
     .image-title, .image-description {
     color: @font-swatch5-color;
     }
@@ -785,7 +789,7 @@ button.btn, .widget.blogsearch button, .ecom-product-go-to-checkout-btn {
       min-height: @twitterProfilePicSize;
       margin-bottom: 20px;
       padding-bottom: 0;
-     
+
       &:last-child {
         margin-bottom: 0;
       }
@@ -809,11 +813,11 @@ button.btn, .widget.blogsearch button, .ecom-product-go-to-checkout-btn {
         position: absolute;
         left: 0;
         top: 0;
-        
+
         @media @mobile {
           width: (@twitterProfilePicSize * 0.45);
           height: (@twitterProfilePicSize * 0.45);
-          
+
         }
         img {
           width: 100%;
@@ -824,7 +828,7 @@ button.btn, .widget.blogsearch button, .ecom-product-go-to-checkout-btn {
       .twitter-content {
         line-height: 1.2em;
         margin-left: (@twitterProfilePicSize + 20);
-       
+
         @media @mobile {
           margin-left: (@twitterProfilePicSize * 0.55 + 12);
         }
@@ -1026,10 +1030,10 @@ width: 100%;
 }
 
 /* ===============================
-  SOCIAL ICONS 
+  SOCIAL ICONS
    =============================== */
 
-.main .main-column2 .widget.socialicons { 
+.main .main-column2 .widget.socialicons {
     padding: 2px 0 0;
     @media only screen and (min-width: 1040px) {
         border-bottom: 1px solid @color-swatch7;
@@ -1075,7 +1079,7 @@ label {
 }
 
 /* ===============================
-  FOOTER 
+  FOOTER
    =============================== */
 
 .bk-footer {
@@ -1166,6 +1170,39 @@ label {
     .ecom-productslist-image-wrap {
         height: 300px;
     }
+
+    .productlist-pagination .productlist-pagination-pages .productlist-pagination-page {
+        background-color: @color-swatch3;
+        color: @font-swatch7-color;
+        text-align: center;
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+        padding-right: 0;
+
+        &.current {
+            background-color: @color-swatch2;
+        }
+
+        a {
+            color: @font-swatch7-color;
+        }
+    }
+
+    .productlist-search {
+        display: block;
+
+        input {
+            border: 1px solid rgba(97,97,97,0.25);
+            height: 40px;
+        }
+        .btn, input {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+
     .ecom-productslist-products {
         .productlist-display-form {
             div {
@@ -1198,6 +1235,7 @@ label {
                 background: image('/images/arrow-dropdown.png') 95% center no-repeat, -moz-linear-gradient(top, white 0%, #f3f3f3 100%);
                 background: image('/images/arrow-dropdown.png') 95% center no-repeat, -webkit-linear-gradient(top, white 0%, #f3f3f3 100%);
                 background: image('/images/arrow-dropdown.png') 95% center no-repeat, linear-gradient(to bottom, white);
+                max-width: 200px;
                 @media @tablet {
                     width: 100%;
                 }
@@ -1231,7 +1269,7 @@ label {
                 font-weight: @font-swatch5-font-weight;
                 line-height: @font-swatch5-line-height;
                 letter-spacing: @font-swatch5-letter-spacing;
-                
+                color: darken(@color-swatch1, 8%);
             }
             .ecom-productlist-price {
                 color: darken(@color-swatch1, 8%);
@@ -1241,6 +1279,7 @@ label {
 }
 
 .widget.ecomproductslist .productlist-filter .productlist-display-form .form-group {
+    margin-right: 1em;
     @media @mobile {
         margin-bottom:0;
     }
@@ -1376,7 +1415,7 @@ label {
             }
             @media @mobile {
                 width:100%;
-            } 
+            }
             &.ecom-product-add-to-cart-btn .text:before {
                 content: "";
                 background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAPCAYAAAACsSQRAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjhBODA2RUZDQUQxMDExRTM5QjhEODE2MThFQzkwRTcwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjhBODA2RUZEQUQxMDExRTM5QjhEODE2MThFQzkwRTcwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RTdGRkY1N0ZBRDA1MTFFMzlCOEQ4MTYxOEVDOTBFNzAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RTdGRkY1ODBBRDA1MTFFMzlCOEQ4MTYxOEVDOTBFNzAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6URM0AAAAA8klEQVR42pyTzwoBQRyAd4RyEa0iL+LqrFwdlKfwIEpeQblyUcpJ2oMDJUdJScrBYWmLNL6pFbaxdvzq29n9zcw3O/8sKeVBvmIPwooYtFUk1SMFGSj4opyBxAYvLoTw+Pb85IjiqEYwiHYskBhY5tENSqZ/SBZBydpQMGY5rkGJC1cDSefbindleNzUBkATEqpPXONxoO6/b6EPE1jCDi5M4aODTmJDFYY0vkeZk9BMZ04xg02UNWEgVycpUuR/HVY4q4G0f4skDQ60dCeXXAVWUAq7D423nUhr6k9+nRMmycIOerobTa6mLh2Un7mHAAMA46vP26UXMz4AAAAASUVORK5CYII=);
@@ -1387,7 +1426,7 @@ label {
                 margin: 0 10px 0 0;
                 position: relative;
                 top:3px;
-            }               
+            }
         }
         .ecom-product-long-description {
             padding-top: 20px;
@@ -1397,7 +1436,7 @@ label {
                 background-color: darken(@color-swatch1,5%);
                 padding: 1em;
             }
-        } 
+        }
     } /* end ecom-product */
 } /* end .widget.ecomproduct */
 
@@ -1413,7 +1452,7 @@ label {
     .basket-summary-title {
         text-align: center;
         padding: 0 0 1em;
-    }   
+    }
 
     // Empty basket
     .basket-summary-empty-copy {
@@ -1446,7 +1485,7 @@ label {
                     display: block;
                     padding: 10px 0 0 0;
                 }
-            }            
+            }
         }
 
         // Table Head
@@ -1646,9 +1685,13 @@ label {
 }
 
 
+/* ===============================
+  ECOM - FEATURED PRODUCTS
+   =============================== */
 
-
-
+.widget.ecomfeaturedproducts .ecom-featuredproducts-wrap .ecom-featuredproducts-info {
+    text-align: center;
+}
 
 
 
@@ -1789,7 +1832,7 @@ h1.menu-name {
     }
 }
 
-/* Misc */ 
+/* Misc */
 
 .widget {
     .socialicons span a {
