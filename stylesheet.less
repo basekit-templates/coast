@@ -983,15 +983,24 @@ button.btn, .widget.blogsearch button, .ecom-product-go-to-checkout-btn {
             border-radius: 4px;
             left: 45%;
             top: 43%;
+            min-width: 47px;
+
             &:after {
                 color: #fff;
                 letter-spacing: -4px;
                 top: 2px;
                 line-height: 49px;
+                font-size: 26px;
+                @media @mobile {
+                    letter-spacing: 0px;
+                }
             }
             &.pause:after {
 
                 line-height: 60px;
+                 @media @mobile {
+                    line-height: 36px;
+                 }
             }
             @media @mobile {
                 width: 40px;
