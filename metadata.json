@@ -2,7 +2,7 @@
     "name":"Coast",
     "thumbnail":"coast.png",
     "screenshot":"coast.png",
-    "templateType":"blog",
+    "templateType":"ecommerce",
     "pageTypes": ["home"],
     "tags": {
     "en": ["clean", "menu", "ecommerce", "shop"],
