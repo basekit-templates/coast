@@ -1,7 +1,7 @@
 {
     "name":"Coast",
     "thumbnail":"coast.png",
-    "screenshot":"coast.png",
+    "screenshot":"coast-screenshot.jpg",
     "templateType":"ecommerce",
     "pageTypes": ["home"],
     "tags": {
