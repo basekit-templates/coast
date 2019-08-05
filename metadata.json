@@ -1,5 +1,6 @@
 {
     "name":"Coast",
+    "versionTenCompatible": 1,
     "thumbnail":"coast.png",
     "screenshot":"coast-screenshot.jpg",
     "templateType":"ecommerce",
